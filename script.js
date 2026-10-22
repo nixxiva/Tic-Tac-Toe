@@ -131,7 +131,7 @@ if(gameBoard[0][2] === gameBoard[1][1] && gameBoard [1][1] === gameBoard [2][0] 
         
 }
 
-if (moves === 9) {
+if (moves === 9 && !gameOver) {
     document.getElementById("result").innerText = "It's a Draw!";
     document.getElementById("show").style.display = "block";
     turn.style.display = "none";
